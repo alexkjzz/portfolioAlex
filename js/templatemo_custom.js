@@ -11,7 +11,6 @@ jQuery(document).ready(function($) {
 		return false;
 	});
 
-
 	$(".main-menu a.homebutton").click(function(){
 		$("#menu-container .content").slideUp('slow');
 		$("#menu-container .homepage").slideDown('slow');
@@ -43,7 +42,12 @@ jQuery(document).ready(function($) {
 		return false;
 	});
 
-
+	// Ajout pour la section compétences
+	$(".main-menu a.competencebutton").click(function(){
+		$("#menu-container .content").slideUp('slow');
+		$("#menu-container .competence-section").slideDown('slow');
+		return false;
+	});
 
 	$('a.toggle-nav').click(function(){
 		$('.menu-responsive').slideToggle();
@@ -52,12 +56,7 @@ jQuery(document).ready(function($) {
 	$('.menu-responsive a').click(function() {
 		$('.menu-responsive').slideToggle().hide();
 	});
-
-
-
-
 });
-
 
 function loadScript() {
 	  var script = document.createElement('script');
@@ -67,10 +66,10 @@ function loadScript() {
 	  document.body.appendChild(script);
 	}
 
-	function initialize() {
-	    var mapOptions = {
-	      zoom: 15,
-	      center: new google.maps.LatLng(16.8496189,96.1288854)
-	    };
-	    var map = new google.maps.Map(document.getElementById('map_canvas'),  mapOptions);
-	}
+function initialize() {
+    var mapOptions = {
+      zoom: 15,
+      center: new google.maps.LatLng(16.8496189,96.1288854)
+    };
+    var map = new google.maps.Map(document.getElementById('map_canvas'),  mapOptions);
+}

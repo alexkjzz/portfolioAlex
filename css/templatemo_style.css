@@ -517,6 +517,58 @@ span.offer-right {
     margin-bottom: 80px;
 }
 
+.competence-header {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.competence-header h2 {
+    font-weight: 100;
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 30px;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.competence-header p {
+    font-size: 17px;
+    line-height: 1.75em;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.competence-holder {
+    margin-bottom: 80px;
+}
+
+.competence-item {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #1a1c1f;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.competence-item img {
+    width: 100%;
+    display: block;
+}
+
+.competence-item:hover .overlay {
+    opacity: 1;
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+}
+
 .p-1 {
     -moz-animation-delay: 1.7s;
     -webkit-animation-delay: 1.7s;
