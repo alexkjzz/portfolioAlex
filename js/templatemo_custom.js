@@ -56,6 +56,28 @@ jQuery(document).ready(function($) {
 	$('.menu-responsive a').click(function() {
 		$('.menu-responsive').slideToggle().hide();
 	});
+
+	// Quand un projet est sélectionné
+    $(".project-button").click(function() {
+        var projectId = $(this).data("project");
+        
+        // Masquer la liste des projets
+        $("#project-list").slideUp('slow');
+        
+        // Afficher les détails du projet sélectionné
+        $("#project-details").slideDown('slow');
+        $(".project-detail").hide(); // Cacher tous les détails des projets
+        $("#project-" + projectId + "-details").show(); // Afficher le détail du projet spécifique
+    });
+
+    // Quand le bouton "Retour à la sélection des projets" est cliqué
+    $("#back-to-list").click(function() {
+        // Masquer les détails du projet
+        $("#project-details").slideUp('slow');
+        
+        // Afficher la liste des projets
+        $("#project-list").slideDown('slow');
+    });
 });
 
 function loadScript() {
