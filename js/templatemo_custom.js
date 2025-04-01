@@ -17,6 +17,12 @@ jQuery(document).ready(function($) {
 		return false;
 	});
 
+	$(".main-menu a.veillebutton").click(function(){
+		$("#menu-container .content").slideUp('slow');
+		$("#menu-container .veille-section").slideDown('slow');
+		return false;
+	});
+	
 	$(".main-menu a.aboutbutton").click(function(){
 		$("#menu-container .content").slideUp('slow');
 		$("#menu-container .about-section").slideDown('slow');

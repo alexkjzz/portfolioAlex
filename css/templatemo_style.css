@@ -1031,3 +1031,109 @@ span[class*="border-"] {
 .pink-button:hover {
     color: #fff;
 }
+
+/* Cacher les détails des stages par défaut */
+#stage-northcreation,
+#stage-decathlon {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Afficher le détail du stage quand l'ancre est activée */
+#stage-northcreation:target,
+#stage-decathlon:target {
+    display: block;
+}
+
+/* Style des cartes de stage */
+.offer-item {
+    background: #46494f;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.offer-item figure img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.offer-content h4 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.offer-content p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Bouton "Voir plus" */
+.voir-plus {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #a95bc3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Bouton "Retour" */
+.retour {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: #dc3545;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.veille-content {
+    position: relative;
+    z-index: 9;
+    background: #fff;
+    padding: 60px 30px;
+}
+
+.veille-content p {
+    line-height: 1.75em;
+    margin-bottom: 35px;
+}
+
+.veille-header {
+    margin-bottom: 90px;
+}
+
+.veille-header h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 100;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.veille-header p {
+    font-size: 17px;
+    line-height: 1.75em;
+    margin-bottom: 35px;
+    -moz-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.veille-button {
+    background: #d5b14f;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 12px 20px;
+    color: #fff !important;
+    -moz-animation-delay: 1.9s;
+    -webkit-animation-delay: 1.9s;
+    animation-delay: 1.9s;
+}
